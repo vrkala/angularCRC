@@ -1,7 +1,9 @@
-angular.module('myApp', ['ngRoute', 'ngResource']
-  .config(function ($routeProvider, $locationProvider) {
-    $routeProvider
-		  .when('/student', {
+angular.module('myApp', ['ngRoute'])
+	
+	.config(function($routeProvider, $locationProvider) {
+
+		$routeProvider
+	 .when('/student', {
 		templateUrl: 'partials/student.html',
 		controller: 'ListController'
 	  }).
@@ -37,5 +39,7 @@ angular.module('myApp', ['ngRoute', 'ngResource']
 		redirectTo: '/',
 		templateUrl: 'partials/student.html'
 	  });
-    $locationProvider.html5Mode(true);
-  });
+	
+		// use the HTML5 History API
+		$locationProvider.html5Mode(true);
+	});
