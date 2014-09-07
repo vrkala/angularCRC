@@ -1,0 +1,350 @@
+<!doctype html>
+<html lang="en" ng-app="myApp">
+<head>
+  <meta charset="UTF-8">
+  <title>Angular Demo</title>
+
+ 
+   
+<!-- Google Fonts -->
+<link href='http://fonts.googleapis.com/css?family=Lato:400,700,300' rel='stylesheet' type='text/css'>
+<!--[if IE]>
+	<link href="http://fonts.googleapis.com/css?family=Lato" rel="stylesheet" type="text/css">
+	<link href="http://fonts.googleapis.com/css?family=Lato:400" rel="stylesheet" type="text/css">
+	<link href="http://fonts.googleapis.com/css?family=Lato:700" rel="stylesheet" type="text/css">
+	<link href="http://fonts.googleapis.com/css?family=Lato:300" rel="stylesheet" type="text/css">
+<![endif]-->
+
+<link href="css/bootstrap.css" rel="stylesheet">
+<link href="css/font-awesome.min.css" rel="stylesheet">
+<link href="css/theme.css" rel="stylesheet">
+<link href="css/colour.css" rel="stylesheet" type="text/css"/>
+<link href="css/prettyPhoto.css" rel="stylesheet" type="text/css"/>
+<link href="css/zocial.css" rel="stylesheet" type="text/css"/>
+<link href="css/alt_footer.css" rel="stylesheet" type="text/css"/>
+<!-- SLIDER REVOLUTION 4.x CSS SETTINGS -->
+<link rel="stylesheet" type="text/css" href="rs-plugin/css/settings.css" media="screen" />
+
+
+<!--[if lt IE 9]>
+<script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+<![endif]-->
+
+</head>
+<body>
+<!--header-->
+	<div class="header">
+<!--menu-->
+    <nav id="main_menu" class="navbar" role="navigation">
+      <div class="container">
+            <div class="navbar-header">
+        <!--toggle-->
+			<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#menu">
+				<i class="fa fa-bars"></i>
+			</button>
+		<!--logo-->
+			
+				<a class="logo" href="index.html" ><img src="img/logolarge.png" alt="" class="animated bounceInDown" /></a> 
+			
+		</div>
+           
+            <div class="collapse navbar-collapse"  ng-controller="HeaderController" id="menu">
+                <ul class="nav navbar-nav pull-right">
+                   			<li class="dropdown " ng-class="{ active: isActive('/student')}"><a href="#/student">Student</a> 
+							<ul class="dropdown-menu">
+							<li><a href="index.html">Slider Revolution</a></li>
+							<li><a href="index2.html">Nerve Slider</a></li>
+							<li><a href="index3.html">NivoSlider</a></li>
+							<li><a href="index4.html">Slides</a></li>
+							<li><a href="index5.html">Html5 Video</a></li>
+						    </ul>
+							</li>
+							<li class="dropdown" ng-class="{ active: isActive('/employer')}"><a href="#/employer">Employers</a>
+						    <ul class="dropdown-menu">
+								<li><a href="team.html">Why UF</a></li>
+								<li><a href="about.html">Request a Consultation</a></li>
+								<li><a href="javascript:{}">Career Showcase</a>
+									<ul class="dropdown-menu sub-menu">
+										<li><a href="#">about</a></li>
+										<li><a href="#">Register</a></li>
+										<li><a href="#">Become a Sponsor</a></li>
+										
+									</ul>
+							    </li>
+								<li><a href="javascript:{}">Services</a>
+									<ul class="dropdown-menu sub-menu">
+										<li><a href="#">Career Fairs</a></li>
+										<li><a href="#">Info Sessions</a></li>
+										<li><a href="#">Job Postings</a></li>
+										<li><a href="#">On-Campus Interviews</a></li>
+										
+									</ul>
+							    </li>
+								<li><a href="testimonials.html">Employer University</a></li>
+								<li><a href="javascript:{}">Gator CareerLink</a>
+									<ul class="dropdown-menu sub-menu">
+										<li><a href="#/employer/gatorcareerlink">about</a></li>
+										<li><a href="#">Build Your Page</a></li>
+										<li><a href="#">Login</a></li>
+									</ul>
+							    </li>
+								<li><a href="javascript:{}">Partner with Us</a>
+									<ul class="dropdown-menu sub-menu">
+										<li><a href="#">Increase Your Visibility</a></li>
+									</ul>
+							    </li>
+								<li><a href="testimonials.html">Contact</a></li>
+								
+							 </ul>
+							</li>
+							<li class="dropdown" ng-class="{ active: isActive('/faculty')}"><a href="#/faculty">Faculty</a>
+								<ul class="dropdown-menu">
+										<li><a href="portfolio_2columns.html">2 Columns</a></li>
+										<li><a href="portfolio_3columns.html">3 Columns</a></li>
+										<li><a href="portfolio_4columns.html">4 Columns</a></li>
+										<li><a href="portfolio_masonry.html">Masonry</a></li>
+										<li><a href="gallery.html">Paginated Gallery</a></li>
+										<li><a href="video_gallery.html">Video Gallery</a></li>
+										<li><a href="single_portfolio.html">Single Slider</a></li>
+										<li><a href="single_video.html">Single Video</a></li>
+										<li><a href="single_image.html">Single Image</a></li>
+										<li><a href="full_slider.html">Full Slider</a></li>
+										<li><a href="full_video.html">Full Video</a></li>
+								</ul>
+							</li>
+							<li class="dropdown" ng-class="{ active: isActive('/alumni')}"><a href="#/alumni">Alumni</a>
+								<ul class="dropdown-menu">
+										<li><a href="scaffolding.html">Scaffolding</a></li>
+										<li><a href="shortcodes.html">Shortcodes</a></li>
+										<li><a href="icons.html">Icons</a></li>
+										<li><a href="script_examples.html">JS Examples</a></li>
+										<li><a href="javascript:{}">Sub Menu</a>
+											<ul class="dropdown-menu sub-menu">
+												<li><a href="#">Sub One</a></li>
+												<li><a href="#">Sub Two</a></li>
+												<li><a href="#">Sub Three</a></li>
+												<li><a href="#">Sub Four</a></li>
+											</ul>
+										</li>
+								</ul>
+							</li>
+							<li class="dropdown" ng-class="{ active: isActive('/about')}"><a href="#/about">About</a>
+								<ul class="dropdown-menu">
+										<li><a href="dribbble_stream.html">Dribbble Stream</a></li>
+										<li><a href="alt_footer.html">Alt. Footer & Boxes</a></li>
+										<li><a href="pricing_table.html">Pricing Table</a></li>
+										<li><a href="404.html">404 Page</a></li>
+								</ul>
+							</li>
+							
+							
+						</ul>
+					</div>
+				</div>
+			</nav>
+		</div>
+		
+		
+	<!--//header-->
+    
+   
+<div class="main" ng-view ></div>
+
+<!--footer-->
+	<div id="footer_alt" style="position:relative;">
+		<div class="container">
+			<div class="row">
+			
+			<!--column 1-->
+			<div class="col-sm-12 col-md-3">
+					<h6>get in touch</h6>
+				
+						<p>
+							Sanso tincidunt laoreet est, in trist ique <a href="#">sapien consequat</a>.
+							Lorem ipsum dolor sit amet, rebum put ant recusabo in ius, pri simul tempor ne, his ei summo virtute efficiantur. </p>
+						<p>
+							23 Mornington Crescent<br/>
+							Camden High Street<br/>
+							London NW1 7JE
+						</p>
+						
+						<p>
+							<i class="fa fa-envelope-o hue"></i> 
+							<a href="mailto:name@example.com">name@example.com</a><br/>
+							<i class="fa fa-phone hue"></i> +44 020 2345 1987
+						</p>
+					</div>
+				
+				<!--column 2-->
+				<div class="col-sm-12 col-md-3">
+					<h6>popular posts</h6>
+					<ul class="media-list">
+							<li class="media">
+								<img class="img-rounded pull-left" src="img/small/pop_post1.jpg" alt="" height="42" width="42">
+								<div class="media-body">
+								<a href="#">Aliquam convallis erat a enim dictum putant recusabo in ius</a>
+								<br/><i class="fa fa-clock-o hue"></i> March 12th 2013</div>
+							</li>
+							
+							<li class="media">
+								<img class="img-rounded pull-left" src="img/small/pop_post2.jpg" alt="" height="42" width="42">
+								<div class="media-body">
+								<a href="#">Aliquam convallis erat a enim dictum putant recusabo in ius</a>
+								<br/><i class="fa fa-clock-o hue"></i> Feb 14th 2013
+								</div>
+							</li>
+							
+							<li class="media">
+								<img class="img-rounded pull-left" src="img/small/pop_post3.jpg" alt="" height="42" width="42">
+								<div class="media-body">
+								<a href="#">Aliquam convallis erat a enim dictum putant recusabo in ius
+							</a>
+								<br/><i class="fa fa-clock-o hue"></i> Jan 23rd 2013</div>
+							</li>
+						</ul>  
+							</div>
+					
+					<!--column 3-->		
+					<div class="col-sm-6 col-md-3">
+					<h6>latest posts</h6>
+				
+					<h4>
+						<a href="#">Lorem ipsum dolor sit amet</a>
+					</h4>
+					
+					<p>Pellentesque tincidunt laoreet est, sapien consequat.
+						Lorem ipsum dolor sit ame.
+					</p>
+					
+					<p>
+						<a href="blog_post.html" class="more-link">Continue reading &rarr;</a>
+					</p>
+					
+					
+					<h4>
+						<a href="#">Lorem ipsum dolor sit amet</a>
+					</h4>
+					
+					<p>Pellentesque tincidunt laoreet est, sapien consequat.
+						Lorem ipsum dolor sit ame.
+					</p>
+					
+					<p>
+						<a href="blog_post.html" class="more-link">Continue reading &rarr;</a>
+					</p>
+					</div>
+					
+					<!--column 4-->
+					<div class="col-sm-6 col-md-3">
+					
+					<!--flickr-->
+					<h6>flickr photostream</h6>
+					<div class="flickrs">
+						<div class="FlickrImages">
+							<ul>
+							</ul>
+							<div class="clear">
+							</div>
+								</div>
+									</div>
+				
+								<h5>thanks for stopping by!</h5>
+					
+								<a href="#" class="zocial icon twitter"></a>
+								<a href="#" class="zocial icon facebook"></a>
+								<a href="#" class="zocial icon linkedin"></a>
+								<a href="#" class="zocial icon googleplus"></a>
+								<a href="#" class="zocial icon vimeo"></a>
+							
+							<div class="copyright">
+							FLATI
+							&copy;
+							<script type="text/javascript">
+								var d = new Date()
+								document.write(d.getFullYear())
+								</script>
+							 - All Rights Reserved<br/>
+							Template by <a href="http://spiralpixel.com">Spiral Pixel</a>
+						</div>
+						</div>
+					</div>
+				</div>
+		
+<div style="position:absolute; bottom:0px; width:100%; text-align:center;" ><span><img src="/angularCRC/img/bottomskyline.png"/></span></div> 
+
+		</div>
+		<!--//footer-->
+	
+	<!-- footer 2 -->
+	<div id="footer2" style="background-color:#323A45">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-12">
+				<div class="copyright">
+							UF Career Resource Center
+							&copy;
+							<script type="text/javascript">
+							//<![CDATA[
+								var d = new Date()
+								document.write(d.getFullYear())
+								//]]>
+								</script>
+							 - All Rights Reserved :
+						 by <a href="http://spiralpixel.com">UF</a>
+						</div>
+						</div>
+					</div>
+				</div>
+					</div>
+				<!-- up to top -->
+				<a href="#"><i class="go-top fa fa-angle-double-up"></i></a>
+				<!--//end-->
+				
+
+
+    
+<!-- SCRIPTS -->
+<script src="js/jquery.js"></script>			
+<script src="js/bootstrap.min.js"></script>	
+
+
+
+<script src="js/jquery.touchSwipe.min.js"></script>
+<script src="js/jquery.mousewheel.min.js"></script>				
+<script type="text/javascript" src="js/jquery.prettyPhoto.js"></script>
+<script type="text/javascript" src="js/scripts.js"></script>
+<script src="js/retina.js"></script>
+
+
+<!-- FLICKR  - add your id - find it here - http://idgettr.com/-->
+<script type="text/javascript">
+//<![CDATA[
+   $.getJSON("http://api.flickr.com/services/feeds/photos_public.gne?id=60241562@N08&lang=en-us&format=json&jsoncallback=?", function(data){
+		$.each(data.items, function(i,item){
+			if(i<=9){ // change this number to display more or less images
+				$("<img/>").attr("src", item.media.m.replace('_m', '_s')).appendTo(".FlickrImages ul")
+				.wrap("<li><a href='" + item.link + "' target='_blank' title='Flickr'></a></li>");
+			}
+		});			
+    });	
+//]]>
+</script>
+<script src="js/jquery.isotope.min.js" type="text/javascript"></script>
+<script src="js/jquery.nivo.slider.pack.js"></script>
+<script type="text/javascript">
+ //<![CDATA[
+	$(window).load(function() {
+	$('#nslider').nivoSlider({
+	effect: 'fade', directionNav: true, pauseOnHover: true});
+	});
+	//]]>
+</script>    
+  <script src="lib/angular/angular.min.js"></script>
+  <script src="lib/angular/angular-route.min.js"></script>
+  <script src="lib/angular/angular-animate.min.js"></script>
+
+  <script src="js/app.js"></script>
+  <script src="js/controllers.js"></script>
+
+</body>
+</html>
