@@ -2,8 +2,9 @@
 <html lang="en" ng-app="myApp">
 <head>
   <meta charset="UTF-8">
-  <title>Angular Demo</title>
-
+  <title ng-bind="PageTitle.title()"></title>
+<meta name="description" content="{{ MetaInformation.metaDescription() }}">
+    <meta name="keywords" content="{{ MetaInformation.metaKeywords() }}">
  
    
 <!-- Google Fonts -->
